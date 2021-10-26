@@ -1,5 +1,5 @@
 # Technical Challenge - Read Only Key/Value Store
-The point of the challenge is to build a read-only key value server that a client is able to contact over network with a query containing a key and the server returns a corresponding value, as defined in the example dataset. 
+The task is to build a read-only key value server that a client is able to contact over network with a query containing a key and the server returns a corresponding value, as defined in the example dataset. 
 
 The keys must be valid UUID (version 4) and the values are strings.
 
