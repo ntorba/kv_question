@@ -40,15 +40,15 @@ class Key(BaseModel):
 app = FastAPI()
 
 
-kv_store = {}
+KV_STORE = {}
 with open("data.txt", "r") as f:
     data = f.readlines()
     for line in data:
         split_line = line.split()
-        kv_store[split_line[0]] = " ".join(split_line[1:])
+        KV_STORE[split_line[0]] = " ".join(split_line[1:])
 import sys
 
-print("size of kv_store: ", sys.getsizeof(kv_store))
+# print("size of KV_STORE: ", sys.getsizeof(KV_STORE))
 
 
 @app.post("/get_value")
@@ -71,7 +71,7 @@ async def get_value(key: Key, response: Response):
             "message": f"provided key '{key}' is not a valud uuid. All keys should be a valid uuid (version 4)"
         }
 
-    value = kv_store.get(key.key)
+    value = KV_STORE.get(key.key)
     if value is None:
         ## Change code to 400 to make it clear they didn't get a value back, but they can update and try again
         response.status_code = 400
