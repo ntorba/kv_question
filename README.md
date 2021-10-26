@@ -1,11 +1,11 @@
 # Technical Challenge - Read Only Key/Value Store
 The task is to build a read-only key value server that a client is able to contact over network with a query containing a key and the server returns a corresponding value, as defined in the example dataset. 
 
-The keys must be valid UUID (version 4) and the values are strings.
+Each key must be a valid UUID (version 4). The corresponding values are strings.
 
 The server is built with [FastAPI](https://fastapi.tiangolo.com/). The code can be found in `main.py`. 
 
-**Example requests are shown under the Launch Server section. **
+**Example requests are shown under the Launch Server section.**
 
 ## Launch server
 ### Locally 
