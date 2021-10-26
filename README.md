@@ -1,7 +1,7 @@
-# Outerbounds Technical Challenge - Read Only Key/Value Store
+# Technical Challenge - Read Only Key/Value Store
 To complete the challenge, I used [FastAPI](https://fastapi.tiangolo.com/) to build an API that accepts a Post request with a uuid key and return the corresponding payload. 
 
-Example requests are shown under directions the Launch Server section. 
+Example requests are shown under the Launch Server section. 
 
 ## Launch server
 ### Locally 
