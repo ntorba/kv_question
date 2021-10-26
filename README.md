@@ -53,7 +53,7 @@ curl http://localhost:8080/get_value -d '{"key":"8a35eb59-62b3-481c-8875-1f248df
 ```
 
 ### Tests
-The small tests suite was created with pytest. You'll need both the requests and pytest packages to run these tests (along with the requirements in the requirements.txt foler).
+I wrote a small test suite with pytest. You need the `requests` and `pytest` packages to run the tests (along with the requirements in the requirements.txt foler).
 You can run the suite with the `pytest` command. 
 
 ## Dev Environment
