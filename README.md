@@ -3,7 +3,7 @@ The task is to build a read-only key value server that a client is able to conta
 
 Each key must be a valid UUID (version 4). The corresponding values are strings.
 
-The server is built with [FastAPI](https://fastapi.tiangolo.com/). The code can be found in `main.py`. 
+The server is built with [FastAPI](https://fastapi.tiangolo.com/). The server is implemented in `main.py`. 
 
 **Example requests are shown under the Launch Server section.**
 
